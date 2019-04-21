@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+</head>
+<body>
+    <button onclick="backToTopFunction()" id="backToTopBtn" title="Go to top"><i class="fas fa-arrow-circle-up"></i></button>
+    
+    <div class="slide">
+        <div class="container">
+            <h1>Slider</h1>
+            <img id="default" src="image/slide1.jpg" width="500px">
+            <img src="image/slide2.jpg" width="500px" hidden>
+            <img src="image/slide3.jpg" width="500px" hidden>
+            <img src="image/slide4.jpg" width="500px" hidden>
+        </div> 
+    </div>
+    <div class="dropdow-menu">
+        <div class="container">
+            <h1>Dropdown Menu</h1>
+            <div class="row">
+                <div class="btn-dropdown col col-4">
+                    <button onclick="dropdownFunction()" class="dropbtn btn btn-primary">Chọn ảnh <i class="fas fa-chevron-down"></i></button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="javascript:void(0)" class="hoaHongBtn">Ảnh hoa hồng</a>
+                        <a href="javascript:void(0)" class="hoaCoBtn">Ảnh hoa bảy màu</a>
+                        <a href="javascript:void(0)" class="xoaAnhBtn">Xóa ảnh</a>
+                    </div>
+                </div>
+                <div class="col col-8 fa-border image">
+                    <div class="row">
+                        <img src="" class="img-thumbnail">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="validateform-ajax">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="row">
+                        <form action="" method="post" id="form">
+                            <div class="form-group">
+                                <label for="length">Chiều dài</label>
+                                <input type="text" name="length" id="lenghtInput" class="form-control" placeholder="Nhập chiều dài" aria-describedby="helpId">
+                            </div>
+                            <div class="form-group">
+                              <label for="width">Chiều rộng</label>
+                              <input type="text" name="width" id="widthI" class="form-control" placeholder="Nhập chiều rộng" aria-describedby="helpId">
+                            </div>
+                            <input type="submit" value="Tính diện tích" class="btn btn-success">
+                        </form>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="row">
+                        <div class="form-group">
+                          <label for="result">Kết quả</label>
+                        <input type="text" value="" name="result" id="resultO" class="form-control" disabled aria-describedby="helpId">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.0/dist/jquery.validate.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
